@@ -2,11 +2,11 @@ import 'dart:convert';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_demo_1/model/Data.dart';
+import 'package:flutter_demo_1/models/Data.dart';
 import 'package:flutter_demo_1/utils/constants.dart';
 import 'package:http/http.dart' as http;
 
-import 'model/movieResponse.dart';
+import 'models/movieResponse.dart';
 
 class APICallExample extends StatelessWidget {
   const APICallExample({Key? key}) : super(key: key);

@@ -1,4 +1,4 @@
-import 'package:flutter_demo_1/model/Data.dart';
+import 'package:flutter_demo_1/models/Data.dart';
 
 class MovieResponse {
   List<Data>? data;

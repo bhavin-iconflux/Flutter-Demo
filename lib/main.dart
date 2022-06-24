@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo_1/Bloc.dart';
 import 'package:flutter_demo_1/absorbPointer.dart';
 import 'package:flutter_demo_1/align.dart';
 import 'package:flutter_demo_1/apiCall.dart';
@@ -53,6 +54,7 @@ import 'package:flutter_demo_1/queue.dart';
 import 'package:flutter_demo_1/refreshIndicator.dart';
 import 'package:flutter_demo_1/reorderableListview.dart';
 import 'package:flutter_demo_1/row.dart';
+import 'package:flutter_demo_1/safearea.dart';
 import 'package:flutter_demo_1/scaffold.dart';
 import 'package:flutter_demo_1/screenDesign.dart';
 import 'package:flutter_demo_1/scrollable.dart';
@@ -72,6 +74,7 @@ import 'package:flutter_demo_1/theme.dart';
 import 'package:flutter_demo_1/timer.dart';
 import 'package:flutter_demo_1/transform.dart';
 import 'package:flutter_demo_1/urlLauncher.dart';
+import 'package:flutter_demo_1/wrap.dart';
 
 void main() {
   runApp(const MyApp());
@@ -183,7 +186,10 @@ final List<String> widgetLists = <String>[
   'Tab Bar Widget',
   'HTML Package',
   'Location Package',
-  'URL Launcher'
+  'URL Launcher',
+  'Wrap',
+  'SafeArea',
+  'API call with Bloc Pattern'
 ];
 
 class _MyHomePageState extends State<MyHomePage> {
@@ -485,6 +491,18 @@ class _MyHomePageState extends State<MyHomePage> {
             case 74:
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => const UrlLauncherPackage()));
+              break;
+            case 75:
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const WrapWidget()));
+              break;
+            case 76:
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const SafeAreaWidget()));
+              break;
+            case 77:
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const BlocPattern()));
               break;
           }
         },
